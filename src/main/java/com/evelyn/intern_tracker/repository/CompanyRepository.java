@@ -1,6 +1,6 @@
-package com.evelyn.interntracker.repository;
+package com.evelyn.intern_tracker.repository;
 
-import com.evelyn.interntracker.model.Company;
+import com.evelyn.intern_tracker.model.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 // data access later - define interface 
