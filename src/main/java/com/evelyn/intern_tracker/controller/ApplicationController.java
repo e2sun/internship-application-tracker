@@ -24,6 +24,12 @@ public class ApplicationController {
         return applicationRepository.findAll(); 
     }
 
+    // GET /api/applications/companyId={companyId}
+    @GetMapping("/companyId={companyId}")
+     public List<Application> getApplicationsByCompany( @PathVariable Long companyId){
+        return applicationRepository.findByCompany_Id(companyId);
+    }
+
     // POST /api/applications
     @PostMapping
     public Application createApplication(@RequestBody Application application){
