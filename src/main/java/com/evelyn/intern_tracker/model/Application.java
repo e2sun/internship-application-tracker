@@ -35,7 +35,7 @@ public class Application {
 
     }
 
-    public Application(String roleTitle, String dateApplied, String status, String portalLink, String notes, String company){
+    public Application(String roleTitle, String dateApplied, String status, String portalLink, String notes, Company company){
         this.roleTitle = roleTitle;
         this.dateApplied = dateApplied;
         this.status = status;
@@ -93,7 +93,7 @@ public class Application {
         this.notes = notes;
     }
 
-    public String getCompany(){
+    public Company getCompany(){
         return company;
     }
 
