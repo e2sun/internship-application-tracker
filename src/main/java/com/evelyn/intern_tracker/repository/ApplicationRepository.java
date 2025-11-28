@@ -8,4 +8,5 @@ import java.util.List;
 // spring data JPA generates CRUD methods
 public interface ApplicationRepository extends JpaRepository<Application, Long>{
     List<Application> findByCompany_Id(Long companyId);// _ in Company_Id tells Spring to go through company field and then use its id
+    void deleteByCompany_Id(Long companyId);
 }
