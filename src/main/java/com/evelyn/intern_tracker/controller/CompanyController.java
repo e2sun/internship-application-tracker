@@ -6,6 +6,7 @@ import com.evelyn.intern_tracker.repository.ApplicationRepository;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -43,8 +44,9 @@ public class CompanyController {
     }
 
     // DELETE /api/companies
+    @Transactional
     @DeleteMapping("/{id}")
-        @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCompany(@PathVariable Long id){
 
         if (!companyRepository.existsById(id)){
