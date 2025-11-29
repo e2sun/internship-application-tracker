@@ -4,6 +4,7 @@ This is the **REST API backend** powering the Internship Tracker.
 It manages companies, applications, and provides all CRUD operations using **Spring Boot, Spring Data JPA, and PostgreSQL**.  
 The backend automatically deletes applications when their parent company is deleted.
 
+> **Related Repository**: [Internship Tracker Frontend (Angular)]( https://github.com/e2sun/intership-application-tracker-frontend)
 ---
 
 ## 🚀 Features
